@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
@@ -28,6 +28,46 @@
       <ul class="list-group container" id="list">
       </ul>
     </div>
+
+
+    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body" id="offcanvasBody">
+        ...
+      </div>
+      <hr class="m-0">
+      <div class="d-flex justify-content-between align-items-center p-4">
+        <div id="offcanvasGenres"></div>
+
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            More
+          </button>
+          <ul class="dropdown-menu p-2">
+            <li class="d-flex justify-content-between align-items-center">
+              <span class="mx-2 my-0">Year:</span>
+              <span id="offcanvasYear"></span>
+            </li>
+            <li class="d-flex justify-content-between align-items-center">
+              <span class="mx-2 my-0">Runtime:</span>
+              <span id="offcanvasRuntime"></span>
+            </li>
+            <li class="d-flex justify-content-between align-items-center">
+              <span class="mx-2 my-0">Budget:</span>
+              <span id="offcanvasBudget"></span>
+            </li>
+            <li class="d-flex justify-content-between align-items-center">
+              <span class="mx-2 my-0">Revenue:</span>
+              <span id="offcanvasRevenue"></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </main>
 
   <footer class="text-muted py-3">
@@ -35,13 +75,14 @@
       <p class="float-end mb-1">
         <a href="#">Volver arriba</a>
       </p>
-      <p class="mb-1">Este sitio forma parte de 
+      <p class="mb-1">Este sitio forma parte de
         <a href="https://jovenesaprogramar.edu.uy/" target="_blank">Jovenes a Programar</a>.
       <p class="mb-1">Generado con fines estrictamente educativos.</p>
     </div>
   </footer>
 
   <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
